@@ -1,256 +1,349 @@
-<h1 class="code-line" data-line-start=1 data-line-end=2 ><a id="DOCV_User_Documentation_1"></a>DOCV User Documentation</h1>
-<h2 class="code-line" data-line-start=3 data-line-end=4 ><a id="Table_of_Contents_3"></a>Table of Contents</h2>
-<ol>
-<li class="has-line-data" data-line-start="4" data-line-end="5"><a href="#overview">Overview</a></li>
-<li class="has-line-data" data-line-start="5" data-line-end="9"><a href="#applications">Applications</a>
-<ul>
-<li class="has-line-data" data-line-start="6" data-line-end="7"><a href="#towers-app">Towers App</a></li>
-<li class="has-line-data" data-line-start="7" data-line-end="8"><a href="#customers-app">Customers App</a></li>
-<li class="has-line-data" data-line-start="8" data-line-end="9"><a href="#admin-panel">Admin Panel</a></li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="9" data-line-end="10"><a href="#getting-started">Getting Started</a></li>
-<li class="has-line-data" data-line-start="10" data-line-end="14"><a href="#features">Features</a>
-<ul>
-<li class="has-line-data" data-line-start="11" data-line-end="12"><a href="#towers-app-features">Towers App Features</a></li>
-<li class="has-line-data" data-line-start="12" data-line-end="13"><a href="#customers-app-features">Customers App Features</a></li>
-<li class="has-line-data" data-line-start="13" data-line-end="14"><a href="#admin-panel-features">Admin Panel Features</a></li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="14" data-line-end="18"><a href="#detailed-usage-instructions">Detailed Usage Instructions</a>
-<ul>
-<li class="has-line-data" data-line-start="15" data-line-end="16"><a href="#towers-app-usage">Towers App</a></li>
-<li class="has-line-data" data-line-start="16" data-line-end="17"><a href="#customers-app-usage">Customers App</a></li>
-<li class="has-line-data" data-line-start="17" data-line-end="18"><a href="#admin-panel-usage">Admin Panel</a></li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="18" data-line-end="19"><a href="#troubleshooting">Troubleshooting</a></li>
-<li class="has-line-data" data-line-start="19" data-line-end="20"><a href="#faq">FAQ</a></li>
-<li class="has-line-data" data-line-start="20" data-line-end="22"><a href="#contact-support">Contact Support</a></li>
-</ol>
-<hr>
-<h2 class="code-line" data-line-start=24 data-line-end=25 ><a id="Overview_24"></a>Overview</h2>
-<p class="has-line-data" data-line-start="26" data-line-end="27">The <strong>DOCV (Doctor Vehicle)</strong> system is a comprehensive suite designed to support and streamline towing services. The suite includes three main applications:</p>
-<ul>
-<li class="has-line-data" data-line-start="28" data-line-end="29"><strong>Towers App</strong>: An application for towing operators (towers) to receive service requests, navigate to customer locations, track earnings, and manage their availability.</li>
-<li class="has-line-data" data-line-start="29" data-line-end="30"><strong>Customers App</strong>: An application for users to request towing services, track the status of their service requests, and pay for services.</li>
-<li class="has-line-data" data-line-start="30" data-line-end="32"><strong>Admin Panel</strong>: A web-based interface for administrators to manage users, monitor requests, view financial reports, and perform system audits.</li>
-</ul>
-<p class="has-line-data" data-line-start="32" data-line-end="33">Each app in the DOCV suite has been designed to provide a seamless experience for different users with specific needs, ensuring an efficient and user-friendly towing service platform.</p>
-<h4 class="code-line" data-line-start=34 data-line-end=35 ><a id="Software_Overview_34"></a>Software Overview</h4>
-<ul>
-<li class="has-line-data" data-line-start="35" data-line-end="37"><strong>Frontend 1: React Native (User &amp; Tower app)</strong>
-<ul>
-<li class="has-line-data" data-line-start="36" data-line-end="37">Utilizing React Native for cross-platform mobile application development.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="37" data-line-end="39"><strong>Frontend 2: React(Service men)</strong>
-<ul>
-<li class="has-line-data" data-line-start="38" data-line-end="39">Utilize React for developing web application</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="39" data-line-end="41"><strong>Backend: Express.js</strong>
-<ul>
-<li class="has-line-data" data-line-start="40" data-line-end="41">Employing Express.js for building a robust server-side application.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="41" data-line-end="45"><strong>Database: MongoDB</strong>
-<ul>
-<li class="has-line-data" data-line-start="42" data-line-end="44">Storing data in MongoDB, a scalable NoSQL database.<br>
--<strong>API: RESTful API</strong></li>
-<li class="has-line-data" data-line-start="44" data-line-end="45">Implementing RESTful APIs for seamless communication between frontend and backend.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 class="code-line" data-line-start=47 data-line-end=48 ><a id="Applications_47"></a>Applications</h2>
-<p class="has-line-data" data-line-start="48" data-line-end="49">Here’s a more detailed user document for the three applications in your DOCV suite:</p>
-<hr>
-<h1 class="code-line" data-line-start=52 data-line-end=53 ><a id="DOCV_Doctor_Vehicle_User_Documentation_52"></a>DOCV (Doctor Vehicle) User Documentation</h1>
-<h2 class="code-line" data-line-start=54 data-line-end=55 ><a id="Overview_54"></a>Overview</h2>
-<p class="has-line-data" data-line-start="56" data-line-end="57">The DOCV suite consists of three applications designed to streamline and support the towing and vehicle maintenance service process. This documentation provides a comprehensive guide for each application:</p>
-<ol>
-<li class="has-line-data" data-line-start="58" data-line-end="59"><strong>Tower App</strong>: Designed for service providers to manage towing requests, earnings, and activities.</li>
-<li class="has-line-data" data-line-start="59" data-line-end="60"><strong>Customer App</strong>: Enables users to book towing and vehicle repair services, track their requests, and view their service history.</li>
-<li class="has-line-data" data-line-start="60" data-line-end="62"><strong>Servicemen App</strong>: Used by mechanics and technicians to accept and manage repair bookings, view customer details, and update the status of repairs.</li>
-</ol>
-<hr>
-<h2 class="code-line" data-line-start=64 data-line-end=65 ><a id="Tower_App_64"></a>Tower App</h2>
-<h3 class="code-line" data-line-start=66 data-line-end=67 ><a id="Purpose_66"></a>Purpose</h3>
-<p class="has-line-data" data-line-start="68" data-line-end="69">The Tower App is used by towing service providers to receive, manage, and fulfill towing requests. It includes features to view job requests, navigate to customer locations, track earnings, and manage availability.</p>
-<h3 class="code-line" data-line-start=70 data-line-end=71 ><a id="Features_and_Usage_70"></a>Features and Usage</h3>
-<ol>
-<li class="has-line-data" data-line-start="72" data-line-end="77">
-<p class="has-line-data" data-line-start="72" data-line-end="73"><strong>Authentication</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="73" data-line-end="74"><strong>Sign Up</strong>: New towers register by providing their name, email, phone number, and password.</li>
-<li class="has-line-data" data-line-start="74" data-line-end="75"><strong>Sign In</strong>: Existing towers can log in with their email and password.</li>
-<li class="has-line-data" data-line-start="75" data-line-end="77"><strong>Forgot Password</strong>: Initiate a password reset via a verification code sent to the registered email.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="77" data-line-end="82">
-<p class="has-line-data" data-line-start="77" data-line-end="78"><strong>Home Screen</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="78" data-line-end="79"><strong>Go Offline/Online</strong>: Toggle availability status to receive or pause new requests.</li>
-<li class="has-line-data" data-line-start="79" data-line-end="80"><strong>Service Request Notification</strong>: When a new request is available, a pop-up shows the distance, service details, and the fee.</li>
-<li class="has-line-data" data-line-start="80" data-line-end="82"><strong>Accept/Reject Requests</strong>: Towers can either accept or reject new requests based on availability.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="82" data-line-end="87">
-<p class="has-line-data" data-line-start="82" data-line-end="83"><strong>Route Navigation</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="83" data-line-end="84">After accepting a job, towers see the route from their current location to the customer’s location.</li>
-<li class="has-line-data" data-line-start="84" data-line-end="85"><strong>Start Ride Button</strong>: Initiates navigation to the customer.</li>
-<li class="has-line-data" data-line-start="85" data-line-end="87"><strong>Detailed Map View</strong>: Provides a zoomed-in view for detailed navigation.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="87" data-line-end="92">
-<p class="has-line-data" data-line-start="87" data-line-end="88"><strong>Earnings Dashboard</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="88" data-line-end="89"><strong>Today’s Earnings</strong>: Shows earnings for the current day.</li>
-<li class="has-line-data" data-line-start="89" data-line-end="90"><strong>Weekly, Monthly, and Total Earnings</strong>: Detailed views of earnings over different periods.</li>
-<li class="has-line-data" data-line-start="90" data-line-end="92"><strong>Withdraw Option</strong>: Towers can request to withdraw available earnings.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="92" data-line-end="95">
-<p class="has-line-data" data-line-start="92" data-line-end="93"><strong>Booking History</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="93" data-line-end="95">Displays both ongoing and past bookings with details such as customer information, vehicle type, and service status.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="95" data-line-end="99">
-<p class="has-line-data" data-line-start="95" data-line-end="96"><strong>Profile Management</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="96" data-line-end="97"><strong>Edit Profile</strong>: Towers can update their name, email, phone number, and profile picture.</li>
-<li class="has-line-data" data-line-start="97" data-line-end="99"><strong>Sign Out</strong>: Log out of the app.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 class="code-line" data-line-start=101 data-line-end=102 ><a id="Customer_App_101"></a>Customer App</h2>
-<h3 class="code-line" data-line-start=103 data-line-end=104 ><a id="Purpose_103"></a>Purpose</h3>
-<p class="has-line-data" data-line-start="105" data-line-end="106">The Customer App is designed for individuals who need towing or vehicle repair services. It provides options for booking services, tracking requests, and viewing history.</p>
-<h3 class="code-line" data-line-start=107 data-line-end=108 ><a id="Features_and_Usage_107"></a>Features and Usage</h3>
-<ol>
-<li class="has-line-data" data-line-start="109" data-line-end="114">
-<p class="has-line-data" data-line-start="109" data-line-end="110"><strong>Authentication</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="110" data-line-end="111"><strong>Sign Up</strong>: Customers register by providing their personal details, including name, email, phone number, and password.</li>
-<li class="has-line-data" data-line-start="111" data-line-end="112"><strong>Sign In</strong>: Access the account with email and password.</li>
-<li class="has-line-data" data-line-start="112" data-line-end="114"><strong>Forgot Password</strong>: Option to reset password via a verification code sent to the registered email.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="114" data-line-end="120">
-<p class="has-line-data" data-line-start="114" data-line-end="115"><strong>Service Booking</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="115" data-line-end="116"><strong>Request Towing or Repair</strong>: Customers can select the type of service needed.</li>
-<li class="has-line-data" data-line-start="116" data-line-end="117"><strong>Enter Vehicle Details</strong>: Information like make, model, and plate number is required.</li>
-<li class="has-line-data" data-line-start="117" data-line-end="118"><strong>Specify Location</strong>: The app uses GPS or manual input for pickup/drop-off locations.</li>
-<li class="has-line-data" data-line-start="118" data-line-end="120"><strong>Service Confirmation</strong>: Confirm and submit the service request.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="120" data-line-end="124">
-<p class="has-line-data" data-line-start="120" data-line-end="121"><strong>Tracking</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="121" data-line-end="122"><strong>Real-Time Tracking</strong>: Once a request is accepted, customers can track the tower or serviceman’s route.</li>
-<li class="has-line-data" data-line-start="122" data-line-end="124"><strong>Notification</strong>: Updates on request acceptance, arrival, or any changes in status.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="124" data-line-end="127">
-<p class="has-line-data" data-line-start="124" data-line-end="125"><strong>Booking History</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="125" data-line-end="127">View past and ongoing requests, along with service details, status, and payments.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="127" data-line-end="132">
-<p class="has-line-data" data-line-start="127" data-line-end="128"><strong>Profile Management</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="128" data-line-end="129"><strong>Edit Profile</strong>: Allows customers to update personal information.</li>
-<li class="has-line-data" data-line-start="129" data-line-end="130"><strong>Payment Methods</strong>: Option to add/update payment details.</li>
-<li class="has-line-data" data-line-start="130" data-line-end="132"><strong>Sign Out</strong>: Log out of the app.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 class="code-line" data-line-start=134 data-line-end=135 ><a id="Servicemen_App_134"></a>Servicemen App</h2>
-<h3 class="code-line" data-line-start=136 data-line-end=137 ><a id="Purpose_136"></a>Purpose</h3>
-<p class="has-line-data" data-line-start="138" data-line-end="139">The Servicemen App is for mechanics and technicians who fix vehicle issues based on customer bookings. It enables servicemen to view, accept, and manage repair requests, update job statuses, and communicate with customers.</p>
-<h3 class="code-line" data-line-start=140 data-line-end=141 ><a id="Features_and_Usage_140"></a>Features and Usage</h3>
-<ol>
-<li class="has-line-data" data-line-start="142" data-line-end="147">
-<p class="has-line-data" data-line-start="142" data-line-end="143"><strong>Authentication</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="143" data-line-end="144"><strong>Sign Up</strong>: Servicemen register by entering their name, email, phone number, and password.</li>
-<li class="has-line-data" data-line-start="144" data-line-end="145"><strong>Sign In</strong>: Log in with email and password.</li>
-<li class="has-line-data" data-line-start="145" data-line-end="147"><strong>Forgot Password</strong>: Password reset option using a verification code sent to the registered email.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="147" data-line-end="151">
-<p class="has-line-data" data-line-start="147" data-line-end="148"><strong>Home Screen</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="148" data-line-end="149"><strong>Available Jobs</strong>: View a list of open repair requests with details on location, vehicle type, and issue.</li>
-<li class="has-line-data" data-line-start="149" data-line-end="151"><strong>Accept/Reject Jobs</strong>: Servicemen can accept a job if they are available to work on it.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="151" data-line-end="156">
-<p class="has-line-data" data-line-start="151" data-line-end="152"><strong>Job Details</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="152" data-line-end="153"><strong>Customer Information</strong>: View customer name, contact details, and vehicle information.</li>
-<li class="has-line-data" data-line-start="153" data-line-end="154"><strong>Job Status Update</strong>: Options to update the status (e.g., “In Progress,” “Completed”).</li>
-<li class="has-line-data" data-line-start="154" data-line-end="156"><strong>Directions</strong>: Use map view to navigate to the customer’s location.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="156" data-line-end="160">
-<p class="has-line-data" data-line-start="156" data-line-end="157"><strong>Service Management</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="157" data-line-end="158"><strong>Service Log</strong>: Record details of work done on the vehicle, including parts used, estimated time of completion, and any additional recommendations.</li>
-<li class="has-line-data" data-line-start="158" data-line-end="160"><strong>Customer Chat</strong>: Direct messaging option for real-time communication with the customer about the job status or any other queries.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="160" data-line-end="164">
-<p class="has-line-data" data-line-start="160" data-line-end="161"><strong>Earnings and Withdrawals</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="161" data-line-end="162"><strong>Earnings Overview</strong>: View earnings based on completed jobs.</li>
-<li class="has-line-data" data-line-start="162" data-line-end="164"><strong>Request Withdrawal</strong>: Initiate withdrawal requests based on available balance.</li>
-</ul>
-</li>
-<li class="has-line-data" data-line-start="164" data-line-end="168">
-<p class="has-line-data" data-line-start="164" data-line-end="165"><strong>Profile Management</strong></p>
-<ul>
-<li class="has-line-data" data-line-start="165" data-line-end="166"><strong>Edit Profile</strong>: Servicemen can update personal details like name, contact number, and profile picture.</li>
-<li class="has-line-data" data-line-start="166" data-line-end="168"><strong>Sign Out</strong>: Log out of the app.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 class="code-line" data-line-start=170 data-line-end=171 ><a id="Additional_Features_170"></a>Additional Features</h2>
-<h3 class="code-line" data-line-start=172 data-line-end=173 ><a id="Notifications_172"></a>Notifications</h3>
-<ul>
-<li class="has-line-data" data-line-start="173" data-line-end="174"><strong>In-App and Push Notifications</strong>: For job requests, payment confirmations, messages, and other critical updates.</li>
-<li class="has-line-data" data-line-start="174" data-line-end="176"><strong>Customizable Alerts</strong>: Users can customize notification preferences.</li>
-</ul>
-<h3 class="code-line" data-line-start=176 data-line-end=177 ><a id="Chat_176"></a>Chat</h3>
-<ul>
-<li class="has-line-data" data-line-start="177" data-line-end="179">Real-time chat between customers, towers, and servicemen for enhanced communication and service quality.</li>
-</ul>
-<hr>
-<h2 class="code-line" data-line-start=181 data-line-end=182 ><a id="FAQs_181"></a>FAQs</h2>
-<p class="has-line-data" data-line-start="183" data-line-end="185"><strong>Q: How do I reset my password if I forgot it?</strong><br>
-A: Use the “Forgot Password” link on the login screen, enter your registered email, and follow the steps to reset your password.</p>
-<p class="has-line-data" data-line-start="186" data-line-end="188"><strong>Q: How can I track my service request?</strong><br>
-A: For customers, tracking is available in the app once a service provider has accepted the request.</p>
-<p class="has-line-data" data-line-start="189" data-line-end="191"><strong>Q: How do I withdraw my earnings as a tower or serviceman?</strong><br>
-A: Go to the “Earnings” section in your respective app, enter the amount you wish to withdraw, and follow the prompts.</p>
-<p class="has-line-data" data-line-start="192" data-line-end="194"><strong>Q: How do I track a towing request in the Customers App?</strong><br>
-A: Once a request is accepted, the tower’s location appears on the map, providing real-time tracking.</p>
-<p class="has-line-data" data-line-start="195" data-line-end="197"><strong>Q: Can towers withdraw earnings at any time?</strong><br>
-A: Yes, towers can request withdrawals from the “Earnings” dashboard in the Towers App, subject to available balance.</p>
-<p class="has-line-data" data-line-start="198" data-line-end="200"><strong>Q: How can I change my account details in the Towers App?</strong><br>
-A: Go to “Profile,” tap on “Edit Profile,” and update your details such as name, email, or phone number.</p>
-<hr>
-<h2 class="code-line" data-line-start=203 data-line-end=204 ><a id="Contact_Support_203"></a>Contact Support</h2>
-<p class="has-line-data" data-line-start="205" data-line-end="206">For any issues or questions, reach out to our support team:</p>
-<ul>
-<li class="has-line-data" data-line-start="207" data-line-end="208"><strong>Email</strong>: <a href="mailto:kakumani001@gannon.edu">kakumani001@gannon.edu</a></li>
-</ul>
-<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCV - User Documentation</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .sidebar a:hover {
+            color: var(--primary-color);
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 2rem;
+            max-width: 1200px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        .section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background-color: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            .content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#user-app">User App Features</a></li>
+            <li><a href="#service-provider">Service Provider Features</a></li>
+            <li><a href="#tower-app">Tower App Features</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1>DOCV (Doctor Vehicle)</h1>
+            <p>Complete User Documentation</p>
+        </div>
+
+        <div class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>DOCV (Doctor Vehicle) is a comprehensive vehicle assistance platform that connects drivers with nearby mechanics and towing services. The platform consists of three main applications:</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>User App</h4>
+                    <p>For drivers to request services and track assistance</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Service Provider App</h4>
+                    <p>For mechanics to manage service requests and bookings</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Tower App</h4>
+                    <p>For towing service providers to manage towing requests</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="getting-started">
+            <h2>Getting Started</h2>
+            <h3>Account Creation</h3>
+            <p>To start using DOCV, follow these steps:</p>
+            <ul>
+                <li>Download the appropriate app for your role (User, Service Provider, or Tower)</li>
+                <li>Click on "Sign Up" to create a new account</li>
+                <li>Fill in required information (name, email, password)</li>
+                <li>Verify your email address</li>
+                <li>Complete your profile setup</li>
+            </ul>
+            
+            <div class="note">
+                <strong>Note:</strong> Service providers and towers will need to undergo additional verification before their accounts are activated.
+            </div>
+        </div>
+
+        <div class="section" id="user-app">
+            <h2>User App Features</h2>
+            <h3>Requesting Service</h3>
+            <ul>
+                <li>Open the app and tap the "+" icon</li>
+                <li>Select your vehicle from the list</li>
+                <li>Choose the type of service needed</li>
+                <li>View nearby service providers</li>
+                <li>Select a provider and confirm booking</li>
+            </ul>
+
+            <h3>Tracking Service Status</h3>
+            <ul>
+                <li>View real-time updates on your booking</li>
+                <li>Chat with service provider through the app</li>
+                <li>Track tower location on map (for towing services)</li>
+                <li>Receive notifications about service progress</li>
+            </ul>
+
+            <h3>Payments</h3>
+            <ul>
+                <li>Add payment methods securely</li>
+                <li>View service costs before confirmation</li>
+                <li>Process payments through the app</li>
+                <li>Access payment history and receipts</li>
+            </ul>
+        </div>
+
+        <div class="section" id="service-provider">
+            <h2>Service Provider Features</h2>
+            <h3>Managing Bookings</h3>
+            <ul>
+                <li>View incoming service requests</li>
+                <li>Accept or decline bookings</li>
+                <li>Update service progress</li>
+                <li>Manage multiple bookings</li>
+            </ul>
+
+            <h3>Service Management</h3>
+            <ul>
+                <li>Add and update service offerings</li>
+                <li>Set availability status</li>
+                <li>Track completed services</li>
+                <li>Manage service pricing</li>
+            </ul>
+        </div>
+
+        <div class="section" id="tower-app">
+            <h2>Tower App Features</h2>
+            <h3>Navigation and Tracking</h3>
+            <ul>
+                <li>Real-time map navigation to customer location</li>
+                <li>Route optimization</li>
+                <li>Live tracking updates for customers</li>
+                <li>Location-based service area management</li>
+            </ul>
+
+            <h3>Job Management</h3>
+            <ul>
+                <li>Accept towing requests</li>
+                <li>View customer and vehicle details</li>
+                <li>Track earnings and completed jobs</li>
+                <li>Manage availability status</li>
+            </ul>
+        </div>
+
+        <div class="section" id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <h3>Common Issues</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Location Services</h4>
+                    <p>Ensure location services are enabled on your device</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Payment Issues</h4>
+                    <p>Verify your payment method and billing information</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Connection Problems</h4>
+                    <p>Check your internet connection and try refreshing the app</p>
+                </div>
+            </div>
+
+            <div class="note">
+                <strong>Need Help?</strong>
+                <p>Contact our support team at support@docv.com for assistance with any issues not covered in this documentation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active state to sidebar links
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navItems = document.querySelectorAll('.sidebar a');
+            
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    const id = section.getAttribute('id');
+                    navItems.forEach(item => {
+                        item.style.color = item.getAttribute('href') === '#' + id 
+                            ? 'var(--primary-color)' 
+                            : 'var(--text-color)';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
